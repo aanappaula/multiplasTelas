@@ -1,7 +1,8 @@
-import React, { UseState } from 'react';
-import { StyleSheet, View  } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, ScrollView, View  } from 'react-native';
 import { Card } from 'react-native-paper';
 import { DefaultTheme } from 'react-native-paper';
+import CardCachorro from './src/Components/CardCachorro';
 
 const animais = [
   {
@@ -49,7 +50,7 @@ return (
   <ScrollView style={styles.scroll}>
   <View style={styles.conteudo}>
     {animaisList.map((animal, index) => (
-      <Card key={index} animal={animal} onRemove={() => handleRemove(index)} />
+      <CardCachorro key={index} animal={animal} onRemove={() => handleRemove(index)} />
     ))}
   </View>
 </ScrollView>
@@ -61,7 +62,7 @@ export default function Cachorros () {
       <Card style={styles.card}>
         <Card.Title title="Cachorros disponíveis para adoção" />
       </Card>
-    <ListaAnimais></ListaAnimais>
+    <ListaAnimais/>
     </View>
   );
 }

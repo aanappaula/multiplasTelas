@@ -6,7 +6,7 @@ import { DefaultTheme } from 'react-native-paper';
 function Home ({navigation}) {
   return  (
     <ScrollView style={styles.scrollView}>
-      <Appbar.Content style={styles.titulo} textAlign='center' title="Amigos de Joinville" color="white" />
+      <Appbar.Content style={styles.titulo} title="Amigos de Joinville" fontWeight='bold' color="white" />
       <Card style={styles.card}>
         <Card.Content style={styles.content}>
           <Button style={styles.button} mode="contained" onPress={() => navigation.navigate('Cachorros')}>
@@ -48,12 +48,13 @@ const styles = StyleSheet.create({
   },
   titulo: {
     backgroundColor: '#FA497A',
-    fontWeight: 'bold',
-    fontSize: 'titleLarge',
+
     textAlign: 'center',
     padding: 15,
     color: 'white', 
     marginBottom: 160,
+    ustifyContent: 'center', 
+    alignItems: 'center', 
   },
   button:{
     backgroundColor: '#FA497A',

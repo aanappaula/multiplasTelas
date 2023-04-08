@@ -4,10 +4,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Provider as PaperProvider } from 'react-native-paper';
 
-import Home from './screens/Home';
-import Gatos from './screens/Gatos';
-import Cachorros from './screens/Cachorros';
-import Passaros from './screens/Passaros';
+import Home from './src/screens/Home';
+import Gatos from './src/screens/Gatos';
+import Cachorros from './src/screens/Cachorros';
+import Passaros from './src/screens/Passaros';
 
 const Stack = createNativeStackNavigator();
 
