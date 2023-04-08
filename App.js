@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState} from 'react';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Provider as PaperProvider } from 'react-native-paper';
 
 import Home from './screens/Home';
-import Livros from './screens/Livros';
-import Filmes from './screens/Filmes';
-import Series from './screens/Series';
+import Gatos from './screens/Gatos';
+import Cachorros from './screens/Cachorros';
+import Passaros from './screens/Passaros';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,9 +17,9 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="Livros" component={Livros} />
-          <Stack.Screen name="Series" component={Series} />
-          <Stack.Screen name="Filmes" component={Filmes} />
+          <Stack.Screen name="Cachorros" component={Cachorros} />
+          <Stack.Screen name="Gatos" component={Gatos} />
+          <Stack.Screen name="Passaros" component={Passaros} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>

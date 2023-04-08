@@ -3,11 +3,11 @@ import { StyleSheet, View } from 'react-native';
 import { Card } from 'react-native-paper';
 import { DefaultTheme } from 'react-native-paper';
 
-export default function Series () {
+export default function Passaros () {
   return (
     <View style={styles.container}>
       <Card style={styles.card}>
-        <Card.Title title="Esta é a tela de séries" />
+        <Card.Title title="Esta é a tela de pássaros" />
       </Card>
     </View>
   );
